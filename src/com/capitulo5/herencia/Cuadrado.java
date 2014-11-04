@@ -12,7 +12,8 @@ package com.capitulo5.herencia;
 public class Cuadrado implements Superficie {
     private int lado;
 
-    public Cuadrado(int lado) {
+    public Cuadrado(int lado) throws LadoNegativoException {
+        if(lado <0)throw new LadoNegativoException();
         this.lado = lado;
     }
 
