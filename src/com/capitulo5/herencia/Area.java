@@ -5,10 +5,7 @@
  */
 package com.capitulo5.herencia;
 
-/**
- *
- * @author campitos
- */
+
 public class Area {
     Superficie c;
 
