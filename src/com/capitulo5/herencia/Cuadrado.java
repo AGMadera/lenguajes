@@ -9,25 +9,30 @@ package com.capitulo5.herencia;
  *
  * @author campitos
  */
-public class Cuadrado implements Superficie {
-    private int lado;
+public class Cuadrado {
+    
+private float lado;
 
-    public Cuadrado(int lado) throws LadoNegativoException {
-        if(lado <0)throw new LadoNegativoException();
+    public Cuadrado(float lado) {
         this.lado = lado;
     }
-
-    public int getLado() {
+    
+    public Cuadrado(){
+        
+    }
+   
+  
+    public float getLado() {
         return lado;
     }
 
-    public void setLado(int lado) {
+    public void setLado(float lado) {
         this.lado = lado;
     }
-
-    @Override
-    public float calcularArea() {
+    
+      public float calcularArea() {
   float area=lado*lado;
   return area;
     }
+
 }
