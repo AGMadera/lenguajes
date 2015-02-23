@@ -15,8 +15,7 @@ public class ProbarConstructores {
      float f=45;
      double dedos=45.2;
      int i2=300;
-     
-     Cuadrado c=new Cuadrado((float)dedos);
+   
              
              
     }

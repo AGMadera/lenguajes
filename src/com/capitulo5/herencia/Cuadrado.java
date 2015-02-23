@@ -18,7 +18,10 @@ private float lado;
  * @param lado  El parametro que debes ingresar es el valor
  * del lado de tu cuadrado
  */
-    public Cuadrado(float lado) {
+    public Cuadrado(float lado) throws FueraDeRangoException, ValorNegativoException {
+               ValidarValores.validarValorNoNegativo(lado);
+        ValidarValores.validarRango(lado);
+ 
         this.lado = lado;
     }
     
@@ -31,7 +34,10 @@ private float lado;
         return lado;
     }
 
-    public void setLado(float lado) {
+    public void setLado(float lado) throws FueraDeRangoException, ValorNegativoException {
+        ValidarValores.validarValorNoNegativo(lado);
+        ValidarValores.validarRango(lado);
+       
         this.lado = lado;
     }
     

@@ -9,10 +9,10 @@ package com.capitulo5.herencia;
  *
  * @author T107
  */
-public class LadoNegativoException extends Exception {
+public class ValorNegativoException extends Exception {
     
-    public LadoNegativoException(){
-        super("Lo siento pero no puedes meter un valor negativo de lado");
+    public ValorNegativoException(){
+        super("Lo siento pero no puedes meter un valor negativo");
     }
     
 }
