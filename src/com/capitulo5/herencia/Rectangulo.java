@@ -5,41 +5,51 @@
  */
 package com.capitulo5.herencia;
 
-/**
- *
- * @author campitos
- */
-public class Rectangulo implements Superficie{
-    private int largo;
-    private int ancho;
 
-    public Rectangulo(int largo, int ancho) {
-        this.largo = largo;
-        this.ancho = ancho;
+public class Rectangulo{
+   private float ladoMayor;
+   private float ladoMenor;
+
+    public Rectangulo() {
     }
 
-    public int getAncho() {
-        return ancho;
-    }
-
-    public void setAncho(int ancho) {
-        this.ancho = ancho;
-    }
-
-    public int getLargo() {
-        return largo;
-    }
-
-    public void setLargo(int largo) {
-        this.largo = largo;
-    }
-
-    @Override
-    public float calcularArea() {
-       float area=largo*ancho;
-       
-       return area;
+    public Rectangulo(float ladoMayor, float ladoMenor) {
+        this.ladoMayor = ladoMayor;
+        this.ladoMenor = ladoMenor;
     }
     
+    public float calcularArea(){
+        return ladoMayor*ladoMenor;
+    }
     
+
+    /**
+     * @return the ladoMayor
+     */
+    public float getLadoMayor() {
+        return ladoMayor;
+    }
+
+    /**
+     * @param ladoMayor the ladoMayor to set
+     */
+    public void setLadoMayor(float ladoMayor) {
+        this.ladoMayor = ladoMayor;
+    }
+
+    /**
+     * @return the ladoMenor
+     */
+    public float getLadoMenor() {
+        return ladoMenor;
+    }
+
+    /**
+     * @param ladoMenor the ladoMenor to set
+     */
+    public void setLadoMenor(float ladoMenor) {
+        this.ladoMenor = ladoMenor;
+    }
+   
+
 }

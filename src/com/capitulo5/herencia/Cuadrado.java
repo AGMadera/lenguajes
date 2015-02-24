@@ -20,7 +20,7 @@ private float lado;
  */
     public Cuadrado(float lado) throws FueraDeRangoException, ValorNegativoException {
                ValidarValores.validarValorNoNegativo(lado);
-        ValidarValores.validarRango(lado);
+               ValidarValores.validarRango(lado);
  
         this.lado = lado;
     }
