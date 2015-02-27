@@ -6,7 +6,7 @@
 package com.capitulo5.herencia;
 
 
-public class Rectangulo{
+public class Rectangulo implements Superficies{
    private float ladoMayor;
    private float ladoMenor;
 
@@ -19,6 +19,7 @@ public class Rectangulo{
     }
     
     public float calcularArea(){
+       System.out.print("El area del rectangulo es:");
         return ladoMayor*ladoMenor;
     }
     

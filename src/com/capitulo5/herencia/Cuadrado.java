@@ -9,7 +9,7 @@ package com.capitulo5.herencia;
  *
  * @author campitos
  */
-public class Cuadrado {
+public class Cuadrado implements Superficies {
     
 private float lado;
 
@@ -42,7 +42,8 @@ private float lado;
     }
     
       public float calcularArea() {
-  float area=lado*lado;
+  System.out.print("El area del cuadrado es:");
+          float area=lado*lado;
   return area;
     }
 

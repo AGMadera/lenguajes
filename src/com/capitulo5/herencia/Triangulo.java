@@ -9,7 +9,7 @@ package com.capitulo5.herencia;
  *
  * @author campitos
  */
-public class Triangulo {
+public class Triangulo implements Superficies {
     private float base;
     private float altura;
 
@@ -21,7 +21,7 @@ public class Triangulo {
         this.altura = altura;
     }
     public float calcularArea(){
-        
+        System.out.print("El area del triangulo es:"); 
         return (base*altura)/2;
     }
 
